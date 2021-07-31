@@ -1,120 +1,165 @@
 <!DOCTYPE html>
 <html lang="ar">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script type="text/html" src="{require('index.js')}"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الصفحة نبذة عن المطعم</title>
+  <script type="text/html" src="{require('index.js')}"></script>
 <script defer src="main.js"></script><link href="css/style.css" rel="stylesheet"></head>
+
 <body>
-  <div class="container-fuild">
-    <!--navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <a class="navbar-brand" href="#">
-        <img src="images/img-logo.jpg" alt="logo resturant" width="20%">
-        مطعم بيتزا فور ماكس
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <header>
+    <div class="container-fuild">
+      <!--navbar-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="./index.html">
+          <img src="images/img-logo.jpg" alt="logo resturant" width="20%">
+          مطعم بيتزا فور ماكس
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse " id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item active">
-            <a class="nav-link ml-2" href="index.html">الصفحة الرئيسية <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ml-2" href="storypizza.html">عن بيتزا</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle ml-2" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              أنواع بيتزا
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li class="dropdown-item" href="#">بيتزا مارجريت</li>
-              <li class="dropdown-item" href="#">بيتزا الخضار</li>
-              <li class="dropdown-item" href="#">بيتزا الدجاج</li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ml-2 " href="#">عروضنا</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ml-2" href="#">فروعنا</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ml-2 " href="contact.html">أتصل بنا</a>
-          </li>
-          <li class="d-none d-lg-block">
-            <a href="checkout.html" id="btn-shopping-cart" class="btn btn-icon" title="عربة الشراء"
-              data-toggle="tooltip" data-placement="bottom">
-              <i class="fas fa-shopping-cart"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!--navbar-->
-  </div>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link ml-2" href="index.html">الصفحة الرئيسية <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ml-2" href="storypizza.html">عن بيتزا</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle ml-2" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                أنواع بيتزا
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li class="dropdown-item" href="#">بيتزا مارجريت</li>
+                <li class="dropdown-item" href="#">بيتزا الخضار</li>
+                <li class="dropdown-item" href="#">بيتزا الدجاج</li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ml-2 " href="#">عروضنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ml-2" href="#">فروعنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ml-2 " href="contact.html">أتصل بنا</a>
+            </li>
+            <li class="d-none d-lg-block">
+              <a href="./checkout.html" id="btn-shopping-cart" class="btn btn-icon" title="عربة الشراء"
+                data-toggle="tooltip" data-placement="bottom">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!--navbar-->
+    </div>
+  </header>
 
-
- <!--footer-->
- <footer class="site-footer">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 col-md-6">
-        <h6>سياسة خصوصية</h6>
-        <p class="text-justify">
-          في موقعنا، الذي يمكن الوصول إليه من خلال PIZZAFORMAX.gmail.com، فإن إحدى أولوياتنا الرئيسية هي خصوصية
-          زوارنا. يحتوي
-          مستند سياسة الخصوصية هذا على أنواع من المعلومات التي يتم جمعها وتسجيلها بواسطة موقعنا وكيفية استخدامها.
-          إذا كانت لديك أسئلة إضافية أو تحتاج إلى مزيد من المعلومات حول سياسة الخصوصية الخاصة بنا ، فلا تتردد في
-          التواصل معنا.
-          تنطبق سياسة الخصوصية هذه فقط على أنشطتنا عبر الإنترنت وهي صالحة لزوار موقعنا فيما يتعلق بالمعلومات التي
-          شاركوها و/أو جمعوها في موقعنا. لا تسري هذه السياسة على أي معلومات يتم جمعها في وضع عدم الاتصال أو عبر قنوات
-          أخرى غير هذا الموقع.
-        </p>
-      </div>
-      <div class="col-6 col-md-3">
-        <h6>الوظائف الشاغرة </h6>
-        <ul class="footer-items inline">
-          <li>شيف بيتزا</li>
-          <li>موظفة على الصندزق</li>
-          <li>موظفة في أستقبال الزبائن</li>
-          <li>موظفة تقديم الطلبات</li>
-        </ul>
-      </div>
-      <div class="col-6 col-md-3">
-        <h6>عن المطعم</h6>
-        <p>
-          مطعمنا يقدم أفضل وجبات بيتزا نحن رقم واحد في منطقةو الزبائنا تشهد على ذلك
-        </p>
-      </div>
+      <ol class="breadcrumb custom-breadcrumb">
+        <li>
+          <a href="./index.html">الصفحة الرئيسية</a>
+        </li>
+        <li class="active">نبذة عن المطعم</li>
+      </ol>
     </div>
-    <hr>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 col-sm-6 col-xs-12">
-        <p id="copyright">
-           &copy;
-        </p>
-      </div>
-      <div class="col-md-4 col-sm-6 col-12">
-        <ul class="social-icons ">
-          <li class="title"> <a class="Facebook" href="#"> <i class="fab fa-facebook-f"></i></a></li>
-          <li class="title"> <a class="Twitter" href="#"> <i class="fab fa-twitter"></i></a></li>
-          <li class="title"> <a class="Instagram" href="#"> <i class="fab fa-instagram"></i></a></li>
-          <li class="title"> <a class="Linkedin" href="#"> <i class="fab fa-linkedin-in"></i></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
-<!--footer-->
+    <section>
+      <h1 class="text-white pb-5 text-center pt-5">نبذة عن المطعم </h1>
+      <p class="pb-5 text-center">
+        تمتاز سلسلة مطاعم بيتزا فور ماكس بأنها أكبر سلسلة مطاعم بيتزا على مستوى لبنان من حيث عدد الفروع (10 فرع) موزعة
 
-   
+        على
+        جميع مناطق في طرابلس
+        وما يقرب ألف موظف.
+        فبدأت بأخوين شابين حيث أنه عام 1996 قرر الأخوين إياد و محمد العلي
+        لافتتاح مطعم لتقديم وجبات البيتزا في مدينة طرابلس
+        في
+        قضاء الشمال حيث تم افتتاح مطعم يحتوي على 25 مقعداً فقط.
+
+        وتم تسمية المطعم من احد شابين و هو عبارة مقسم في كلمتين فور ماكس .
+
+        و في نهاية سنة 2000 تم تعاون مع شركة العيسى في السعودية جدة.
+      </p>
+    </section>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--footer-->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>سياسة خصوصية</h6>
+          <p class="text-justify">
+            في موقعنا، الذي يمكن الوصول إليه من خلال PIZZAFORMAX.gmail.com، فإن إحدى أولوياتنا الرئيسية هي خصوصية
+            زوارنا. يحتوي
+            مستند سياسة الخصوصية هذا على أنواع من المعلومات التي يتم جمعها وتسجيلها بواسطة موقعنا وكيفية استخدامها.
+            إذا كانت لديك أسئلة إضافية أو تحتاج إلى مزيد من المعلومات حول سياسة الخصوصية الخاصة بنا ، فلا تتردد في
+            التواصل معنا.
+            تنطبق سياسة الخصوصية هذه فقط على أنشطتنا عبر الإنترنت وهي صالحة لزوار موقعنا فيما يتعلق بالمعلومات التي
+            شاركوها و/أو جمعوها في موقعنا. لا تسري هذه السياسة على أي معلومات يتم جمعها في وضع عدم الاتصال أو عبر قنوات
+            أخرى غير هذا الموقع.
+          </p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h6>الوظائف الشاغرة </h6>
+          <ul class="footer-items inline">
+            <li>شيف بيتزا</li>
+            <li>موظفة على الصندزق</li>
+            <li>موظفة في أستقبال الزبائن</li>
+            <li>موظفة تقديم الطلبات</li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3">
+          <h6>عن المطعم</h6>
+          <p>
+            مطعمنا يقدم أفضل وجبات بيتزا نحن رقم واحد في منطقةو الزبائنا تشهد على ذلك
+          </p>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p id="copyright">
+            &copy;
+          </p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12">
+          <ul class="social-icons ">
+            <li class="title"> <a class="Facebook" href="#"> <i class="fab fa-facebook-f"></i></a></li>
+            <li class="title"> <a class="Twitter" href="#"> <i class="fab fa-twitter"></i></a></li>
+            <li class="title"> <a class="Instagram" href="#"> <i class="fab fa-instagram"></i></a></li>
+            <li class="title"> <a class="Linkedin" href="#"> <i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--footer--
 </body>
+
 </html>

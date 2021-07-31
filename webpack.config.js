@@ -121,7 +121,11 @@ module.exports = {
             template: "./src/contact.html",
 
         }), 
+        new HtmlWebpackPlugin({
+            filename: "checkout.html",
+            template: "./src/checkout.html",
 
+        }), 
 
         new MiniCssExtractPlugin({
             filename: "css/style.css"
