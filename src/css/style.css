@@ -1,36 +1,37 @@
 @font-face {
     font-family: face;
     src: url(../fonts/Cairo-Regular.ttf);
-}body{
-    font-family: cairoRegular,sans-serif;
-    background-color: #fff;
+}
+body {
+    font-family: cairoRegular, sans-serif;
+    background-color: #000;
     font-size: 15px;
     font-weight: bolder;
     line-height: 1.429;
 }
 /****navbar****/
-.navbar{
+header .navbar {
     box-shadow: 1px 2px 5px #000;
     background-color: #f3a93b !important;
 }
-.navbar-light .navbar-nav .nav-link {
+header .navbar-light .navbar-nav .nav-link {
     color: black;
 }
-.navbar-brand:hover{
-color: #fff !important;
+header .navbar-brand:hover {
+    color: #fff !important;
 }
-.navbar-light .navbar-nav .nav-link:hover{
+header .navbar-light .navbar-nav .nav-link:hover {
     background-color: rgb(17, 10, 1);
-    color:#fff;
+    color: #fff;
 }
-.navbar-nav .dropdown-menu{
+header .navbar-nav .dropdown-menu {
     background-color: #f3a93b;
 }
-.dropdown-item:hover{
+header .dropdown-item:hover {
     background-color: #000;
     color: #fff;
 }
-.btn{
+header .btn {
     padding: 5px 10px 4px;
     color: #f3a93b;
     border: 1px solid #000;
@@ -39,42 +40,18 @@ color: #fff !important;
     margin-left: 10px;
     margin-right: 15px;
     font-size: 12px;
-} 
-.btn-icon:hover {
+}
+header.btn-icon:hover {
     color: #000000;
     background-color: #bfbfbf;
 }
 /****navbar****/
-/****carousel****/
-#carousel-images {
-    background-color: #FFF;
-    height: 400px;
-    padding-top: 20px;
-}
-#carousel-images .carousel-item img {
-    height: 375px;
-    width: 1350px;
-    margin-left: 0;
-    margin-right: 0;
-}
-#carousel-images .carousel-control-prev,
-#carousel-images .carousel-control-next {
-    color: #000 !important;
-    font-size: 25px;
-}
-#carousel-images .carousel-indicators li {
-    background-color: #000;
-}
-#carousel-images .carousel-indicators li:hover {
-    background-color: #fff;
-}
-/****carousel****/
 
-/***section***/
+/**cards-meals***/
 .custom-thumbnail {
     background: #f3a93b;
-    padding: 8px;
-    margin-bottom: 20px;
+    padding: 5px;
+    margin-bottom: 10px;
     border: 1px solid #e0eded;
 }
 .custom-thumbnail .card-body {
@@ -91,7 +68,7 @@ color: #fff !important;
     display: block;
 }
 
-.meals .product-title {
+.cards-meals .meals-title {
     margin: 10px 0 0 0;
     padding: 0;
     border-bottom: 0;
@@ -102,97 +79,144 @@ color: #fff !important;
     padding-bottom: 15px;
 }
 
-.meals .product-title a {
+.cards-meals .meals-title a {
     font-size: 20px;
     font-weight: 600;
-    color: #000;
+    color: #fff;
     padding: 5px;
 }
-
-.meals .price {
-    padding: 4px 0;
-    font-size: 13px;
-    font-weight: 600;
+a {
     color: #fff;
+    text-decoration: none !important;
+    background-color: transparent;
+}
+@media (max-width: 767px) {
+    .custom-thumbnail {
+        padding: 1px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    }
+}
+/**cards-meals***/
+
+section.offers {
+    padding: 55px 0;
+}
+section.offers .title h3 {
+    font-size: 30px;
+    color: #ffffff;
 }
 
-section.meals .btn-icon {
-    position: relative;
+section.offers .plan {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ededed;
+    padding-top: 15px;
+    margin-top: 100px;
 }
 
-.btn-icon.btn-sm span,
-.btn-icon.btn-sm input {
-    padding-left: 35px;
+section.offers .plan p {
+    color: #f3a93b;
+    font-size: 18px;
 }
 
-section.meals .btn {
-    border-radius: 0;
-    border: 0;
-    border-bottom: 4px solid #cccccc;
+section.offers .plan h3 {
+    font-size: 50px;
+    margin: 30px auto;
+}
+
+section.offers .plan h3 span {
+    font-size: 15px;
+    vertical-align: bottom;
+}
+
+section.offers .plan ul li {
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+section.offers .plan ul {
+    padding: 0;
     margin: 0;
-    -webkit-box-shadow: 0 5px 5px -6px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 5px 5px -6px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 5px 5px -6px rgba(0, 0, 0, 0.3);
 }
 
-.btn-black {
-    background-color: #000;
-    border-color: #fff;
-    text-shadow: 1px 1px 0 #f3a93b;
+section.offers .plan button {
+    border: 1px solid #f3a93b;
+    background-color: #ffffff;
+    color: #f3a93b;
+    font-family: ar-font;
+    border-radius: 0px;
+    padding: .5rem 1.75rem;
 }
-.btn-black:hover{
-    background-color: #0c0701;
+
+section.offers .plan button:hover {
     color: #fff;
+    background: #f3a93b;
 }
-/****section****/
 
-/***section***/
+section.offers .plan.popular {
+    margin-top: 55px;
+    padding-top: 60px;
+}
 
+section.offers .plan.popular button {
+    border: 1px solid #f3a93b;
+    background-color: #f3a93b;
+    color: #ffffff;
+}
+
+section.offers .plan.popular button:hover {
+    background: #ffffff;
+    color: #f3a93b;
+}
 /*****footer****/
 
-.site-footer{
+.site-footer {
     background-color: #f3a93b;
     padding: 20px 0 10px;
-    font-size: 15px;
-    line-height: 20px;
-    color:#fff;
+    line-height: 15px;
     border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    font-size: 14px;
+    color: #fff;
+    display: block !important;
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
-.site-footer p{
+.site-footer p {
     color: #000;
 }
-.site-footer hr{
+.site-footer hr {
     border-top-color: #000;
     opacity: 0.5;
 }
-.site-footer hr.small{
+.site-footer hr.small {
     margin: 20px 0;
 }
-.site-footer h6{
+.site-footer h6 {
     color: #fff;
     font-size: 16px;
     margin-top: 5px;
     text-align: center;
 }
-.footer-items{
+.footer-items {
     padding-left: 0;
     list-style: none;
 }
-.footer-items li{
+.footer-items li {
     display: block;
     color: #000;
 }
 .footer-items li:active,
 .footer-items li:focus,
-.footer-items li:hover{
+.footer-items li:hover {
     color: #fff;
     text-decoration: none;
 }
-.footer-items.inline li{
+.footer-items.inline li {
     display: inline-block;
 }
-.site-footer .social-icons a{
+.site-footer .social-icons a {
     width: 40px;
     height: 40px;
     line-height: 40px;
@@ -202,25 +226,25 @@ section.meals .btn {
     background-color: #ffff;
 }
 
-#copyright{
+#copyright {
     margin: 0;
 }
-.social-icons{
+.social-icons {
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
 }
-.social-icons li{
+.social-icons li {
     display: inline-block;
     margin-bottom: 4px;
 }
-.social-icons li title{
+.social-icons li title {
     margin-right: 15px;
     color: #fff;
     font-weight: 700;
     font-size: 13px;
 }
-.social-icons a{
+.social-icons a {
     background-color: #fff;
     color: #000;
     font-size: 16px;
@@ -230,60 +254,68 @@ section.meals .btn {
     text-align: center;
     margin-right: 8px;
     border-radius: 100%;
-    transition:  all 0.2s linear;
+    transition: all 0.2s linear;
 }
 .social-icons a:active,
 .social-icons a:focus,
-.social-icons a:hover{
-color: #fff;
-background-color: #29aafe;
+.social-icons a:hover {
+    color: #fff;
+    background-color: #29aafe;
 }
-.social-icons a.Facebook:hover{
+.social-icons a.Facebook:hover {
     background-color: #3b5998;
 }
-.social-icons a.Twitter:hover{
+.social-icons a.Twitter:hover {
     background-color: #00aced;
 }
-.social-icons a.Instagram:hover{
+.social-icons a.Instagram:hover {
     background-color: #ea4c89;
 }
-.social-icons a.Linkedin:hover{
+.social-icons a.Linkedin:hover {
     background-color: #007bb6;
 }
 
-
-@media (max-width:991px){
-    .site-footer[class^="col-"]{
+@media (max-width: 991px) {
+    .site-footer[class^="col-"] {
         margin-bottom: 30px;
     }
 }
-@media (max-width:767px){
-    .site-footer{
-       padding-bottom: 0;
+@media (max-width: 767px) {
+    .site-footer {
+        padding-bottom: 0;
     }
     .site-footer .copyright-text,
-    .site-footer .social-icons{
+    .site-footer .social-icons {
         text-align: center;
-    } 
-  
+    }
 }
-@media (max-width:500px){
+@media (max-width: 500px) {
     .social-icons li {
         padding-top: 20px;
         right: 50px;
     }
 }
+@media (max-width: 508px) {
+    .site-footer p {
+        font-size: 14px;
+    }
+    #copyright {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+}
+
 /*****footer****/
 /***section contact****/
 section.contacts {
-    background-color: #ffffff;
+    background-color: #000;
     padding-top: 100px;
     text-align: right;
 }
 section.contacts .info h3 {
     font-size: 24px;
     line-height: 50px;
-    color: #181c1c;
+    color: #fff;
     font-weight: bold;
 }
 section.contacts .info ul li {
@@ -302,12 +334,11 @@ section.contacts .info ul li i {
 section.contacts .form h3 {
     font-size: 24px;
     line-height: 50px;
-    color: #181c1c;
+    color: #fff;
     font-weight: bold;
     margin: 50px auto 20px;
 }
-section.contacts .form form input,
-section.contacts .form form textarea {
+section.contacts .form form input, section.contacts .form form textarea {
     background-color: #f7f7f7;
     border: 2px solid #eee;
     border-radius: 3px;
@@ -336,3 +367,9 @@ section.contacts .form form .error {
     color: red;
 }
 /***section contact****/
+
+
+
+
+
+

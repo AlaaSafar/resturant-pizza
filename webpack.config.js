@@ -4,47 +4,55 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 module.exports = {
-
-    entry: {
-        app: './src/index.js'
+ 
+    entry:  {
+      app:'./src/index.js'
     },
+
 
     output: {
         path: path.join(__dirname, "/dist"),
+        publicPath: '',
         filename: "main.js"
-
-
     },
+
     mode: "development",
+
     devServer: {
         contentBase: path.join(__dirname, "/dist"),
         port: 1777,
         writeToDisk: true,
         open: true,
     },
+
     module: {
         rules: [
-
             {
                 test: /\.html$/,
+
                 use: [
                     {
                         loader: "html-loader",
-                        options: {
-                            minimize: true,
-                        }
                     }
                 ]
-
             },
+
+
+
             {
+                test: /\.(sa|sc|c)ss$/,
+                  use: [
+                    {
+                      loader: MiniCssExtractPlugin.loader, 
+                      options: {
+                        publicPath: '../' 
+                      }
+                    },
+                    'css-loader',
+                    'sass-loader'
+                  ]
+              },
 
-                test: /\.css$/,
-                use: [
-                    MiniCssExtractPlugin.loader,
-                    "css-loader",
-                ],
-            },
             {
                 test: /\.(png|svg|jpe?g|gif|jfif)$/,
                 use: [
@@ -57,6 +65,7 @@ module.exports = {
                     }
                 ]
             },
+
             {
                 test: /\.(svg|eot|woff|woff2|ttf)$/,
                 use: [
@@ -70,15 +79,15 @@ module.exports = {
                     }
                 ]
             },
-           {
+
+            {
                 test: require.resolve('jquery'),
                 loader: 'expose-loader',
                 options: {
                     exposes: ['$', 'jQuery'],
                 }
             },
-
-        ],
+        ]
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -106,11 +115,7 @@ module.exports = {
             template: "./src/storypizza.html",
 
         }), 
-        new HtmlWebpackPlugin({
-            filename: "checkout.html",
-            template: "./src/checkout.html",
 
-        }), 
         new HtmlWebpackPlugin({
             filename: "contact.html",
             template: "./src/contact.html",

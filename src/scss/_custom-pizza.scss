@@ -1,0 +1,120 @@
+.custom-breadcrumb {
+    background-color: transparent;
+    padding: 25px 0;
+    a {
+        color: $color-custom;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #f8ad47;
+    }
+
+    > li + li:before {
+        content: ">";
+        color: $color-custom;
+        padding: 0 5px;
+    }
+
+    .active {
+        color: $color-custom;
+    }
+}
+.custom-thumbnail {
+    border: 2px solid #eef0ea;
+    padding: 8px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    :hover {
+        border-color: $color-custom;
+    }
+    h4 {
+        font-size: 18px;
+        padding-top: 10px;
+    }
+    .card-body {
+        padding: 9px;
+    }
+    .price {
+        padding-top: 10px;
+    }
+    .overlay {
+        position: absolute;
+        background-color: rgba(232, 231, 219, 0.823);
+        height: 250px;
+        width: calc(100% - 16px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: all 0.3s ease;
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    .add-to-cart-btn {
+        background-color: $color-custom;
+        color: $color-brand;
+        font-weight: bold;
+        &:hover,
+        &:active,
+        &:focus,
+        &:active:hover,
+        &:active:focus {
+            color: #000;
+        }
+    }
+
+    .sale::before {
+        content: "./";
+    }
+
+    .sale {
+        padding: 5px 10px;
+        position: absolute;
+        left: 16px;
+        top: 14px;
+        direction: ltr;
+    }
+
+    img {
+        height: 250px;
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+.custom-carousel-indicators > li {
+    height: 13px;
+    width: 13px;
+    margin: 2px;
+    background-color: #dbdbdb;
+    .active {
+        background-color: #565656;
+    }
+}
+
+.custom-btn-primary {
+    &:hover,
+    &:active,
+    &:focus,
+    &:hover,
+    &:focus {
+        color: $color-custom !important;
+        background-color: #f3a93b !important;
+        background-color: transparent;
+    }
+}
+
+.custom-btn-with-icon {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding: 5px 10px 5px 10px;
+    color:$color-brand !important;
+    border-color: $color-brand !important;
+    background-color: transparent;
+    border-radius: 3px;
+}

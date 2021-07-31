@@ -1,0 +1,149 @@
+@import './vars';
+@import './custom-pizza';
+@import './custom.scss';
+
+
+
+#carousel-product-images{
+    .carousel-indicators{
+        position: relative;
+        top: -35px;
+        right: 0;
+         img{
+            border: 1px solid $color-border;
+            width: 30%;
+        }
+    }
+     .carousel-item img{
+        border: 1px solid $color-border;
+        width: 100%;
+    }
+
+}
+.product-option {
+    display: inline-block;
+    height: 23px;
+    width: 23px;
+    border: 1px solid $color-border;
+    text-align: center;
+    justify-content: center;
+    color: $color-product;
+    margin: 3px 3px 9px 3px;
+    display: inline-block;
+     input {
+        display: none;
+    }
+     label {
+        font-weight: 700;
+        display: inline-block;
+    }
+    .active {
+        color: #f8ad47;
+        border-color: #f8ad47;
+    }
+}
+.product-quantity{
+    padding-bottom: 20px;
+    select {
+        width: 56px;
+        height: 34px !important;
+        padding: 6px 12px;
+        margin-right: 3px;
+        &:hover {
+            color: #f8ad47;
+            border-color: #f8ad47;
+        }
+    }
+     .label {
+        padding-top: 10px;
+    }
+}
+.comments .media {
+    margin: 15px;
+    img {
+        width: 80px;
+        height: 80px;
+        margin-left: 10px;
+        border: 1px solid #dfdfdf;
+    }
+     .media-heading {
+        font-size: 18px;
+        margin-bottom: 5px;
+        color: #f7f7f7;
+    }
+    &:first-child {
+        margin-top: 0px;
+    }
+}
+.rating {
+    color: #000;
+     .active {
+        color: $color-brand;
+    }
+    .active{
+        color: #f8ad47;
+    }
+     .active1 {
+        color: 000;
+    }
+}
+
+.borders-between > div + div {
+    border-top: 1px solid $color-border;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.block-100 {
+    width: 100%;
+    display: block;
+}
+.product-category {
+    color: $color-product;
+}
+#form-product-selection h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 18px 0 18px;
+}
+.price.large {
+    font-size: 30px;
+    margin-top: 20px;
+}
+.color-option.active {
+    border-color: $color-custom;
+    outline: #000 solid 1px;
+}
+
+#form-product-selection.borders-between{
+    color:$color-custom;
+}
+.heading-with-border-bottom {
+    border-bottom: 2px solid $color-border;
+    padding-bottom: 15px;
+    color: #f3af41;
+}
+
+.heading-inline {
+    display: inline-block;
+    min-width: 250px;
+}
+
+.more-description p{
+    margin-bottom: 10px;
+}
+p{
+    color: #f3af41;
+}
+
+.suggestions .custom-thumbnail {
+    margin-right: -8px;
+    margin-left: -8px;
+    margin-bottom: 50px;
+}
+
+#carousel-most-sold .carousel-indicators {
+    position: static;
+}
+.price {
+    color: #ffffff;
+}
