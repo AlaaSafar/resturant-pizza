@@ -16,6 +16,7 @@ $(document).ready(function () {
     $('[data-remove-from-cart]').on("click", function () {
         $(this).parents('[data-product-info]').remove();
 
+
         calculateTotalPrice();
     });
 
@@ -62,8 +63,13 @@ $(document).ready(function () {
         $('#total-price-for-all-products').text(totalPriceForAllProducts + '$');
     }
 });
-
-
+$(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  
+    $('.add-to-cart-btn').click(function () {
+      alert('أضيف المنتج إلى عربة الشراء');
+    });
+});
 
 
 

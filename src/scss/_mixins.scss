@@ -1,0 +1,22 @@
+//pizza1
+@mixin background-body($color){
+    background-color: $color;
+}
+.color{
+@include background-body($body-article);
+}
+
+//pizza2
+@mixin background-color($color1){
+    background-color: ($color1);
+}
+.color1{
+@include  background-color($body-bac1);
+}
+//pizza3
+@mixin background-color2($color2){
+    background-color: ($color2);
+}
+.color2{
+@include  background-color2($body-bac2);
+}

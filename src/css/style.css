@@ -45,6 +45,17 @@ header.btn-icon:hover {
     color: #000000;
     background-color: #bfbfbf;
 }
+@media (max-width: 505px) {
+    .navbar-light .navbar-toggler {
+        display: inline-block;
+        font-size: inherit;
+        height: 1em;
+        overflow: visible;
+        vertical-align: -0.125em;
+        border: none;
+       
+    }
+}
 /****navbar****/
 
 /**cards-meals***/
